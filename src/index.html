@@ -1,29 +1,125 @@
-<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Cartas</title>
+    <link rel="stylesheet" href="style.css" />
     <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <!--Primera Carta-->
+    <div class="d-flex justify-content-center align-items-center">
+      <div
+        id="card1-container"
+        class="card position-absolute top-50 start-50 translate-middle"
+      >
+        <p>
+          <i
+            class="fa-solid fa-clover cloverCard position-absolute top-0 start-0"
+            alt="clover"
+          ></i>
+        </p>
+        <h5
+          id="numberOfCard1"
+          class="position-absolute top-50 start-50 translate-middle"
+        >
+          Random Number
+        </h5>
+        <p>
+          <i
+            class="fa-solid fa-clover cloverCard2 position-absolute bottom-0 end-0"
+            alt="reverseClover"
+          ></i>
+        </p>
+      </div>
+
+      <!--Segunda Carta-->
+      <div
+        id="card2-container"
+        class="card position-absolute top-50 start-50 translate-middle"
+      >
+        <i
+          class="fa-solid fa-diamond diamondCard position-absolute top-0 start-0"
+          alt="diamond"
+        ></i>
+        <h5
+          id="numberOfCard2"
+          class="position-absolute top-50 start-50 translate-middle"
+        >
+          Random Number
+        </h5>
+        <p>
+          <i
+            class="fa-solid fa-diamond diamondCard2 position-absolute bottom-0 end-0"
+            alt="reverseDiamond"
+          ></i>
+        </p>
+      </div>
+
+      <!--Tercera Carta-->
+      <div
+        id="card3-container"
+        class="card position-absolute top-50 start-50 translate-middle"
+      >
+        <p>
+          <i
+            class="fa-solid fa-heart heartCard position-absolute top-0 start-0"
+            alt="heart"
+          ></i>
+        </p>
+        <h5
+          id="numberOfCard3"
+          class="position-absolute top-50 start-50 translate-middle"
+        >
+          Random Number
+        </h5>
+        <p>
+          <i
+            class="fa-solid fa-heart heartCard2 position-absolute bottom-0 end-0"
+            alt="reverseHeart"
+          ></i>
+        </p>
+      </div>
+
+      <!--Cuarta Carta-->
+      <div
+        id="card4-container"
+        class="card position-absolute top-50 start-50 translate-middle"
+      >
+        <p>
+          <i
+            class="fa-solid fa-spa spadeCard position-absolute top-0 start-0"
+            alt="spade"
+          ></i>
+        </p>
+        <h5
+          id="numberOfCard4"
+          class="position-absolute top-50 start-50 translate-middle"
+        >
+          Random Number
+        </h5>
+        <p>
+          <i
+            class="fa-solid fa-spa spadeCard2 position-absolute bottom-0 end-0"
+            alt="reverseSpade"
+          ></i>
+        </p>
       </div>
     </div>
+    <script src="app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

@@ -1,0 +1,32 @@
+html body{
+    background-color: green;
+}
+
+.heartCard2, .spadeCard2{
+    -moz-transform: scale(-1, -1);
+    -o-transform: scale(-1, -1);
+    -webkit-transform: scale(-1, -1);
+    transform: scale(-1, -1);
+}
+
+.heartCard, .heartCard2, .diamondCard, .diamondCard2{
+    font-size: 2.362rem;
+    color: red;
+}
+
+/* Card Numbers */
+#numberOfCard1, #numberOfCard2, #numberOfCard3, #numberOfCard4{
+font-size: 10rem;
+}
+
+/* Card Symbols */
+.cloverCard, .cloverCard2, .spadeCard,.spadeCard2{
+    font-size: 2.362rem;
+}
+
+
+#card1-container, #card2-container, #card3-container, #card4-container {
+    display: none; /* Ocultamos todas las cartas inicialmente */
+    min-width: 14.125rem; 
+    min-height: 21.25rem;
+  }
